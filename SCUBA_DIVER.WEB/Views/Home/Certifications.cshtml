@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Certifications";
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Certifications | Proud Parent of a SCUBA Diver</title>
+    <link href="~/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="mborder mainbox">
+        <div class="mborder sub-box-white">
+            <div class="mborder header">
+                <a href="index.html"><img src="~/images/proud_parent300x101.jpg" alt="Proud Parent Image" /></a>
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Classes", "Classes", "Home")</li>
+                    <li>@Html.ActionLink("Certifications", "Certifications", "Home")</li>
+                </ul>
+            </div>
+            <div class="para">
+                <h2>Certifications</h2>
+                <hr>
+                <div class="cert-pic">
+                    <img src="~/images/ssiposter2.jpg" alt="ssi poster" id="image1"
+                         onmouseover="newpic()"
+                         onmouseout="oldpic()">
+
+<script>
+    function newpic() {
+        document.getElementById("image1").src="/images/equivalency750.jpg";
+    }
+
+    function oldpic() {
+        document.getElementById("image1").src="/images/ssiposter2.jpg"
+
+    }
+
+
+
+</script>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

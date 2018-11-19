@@ -1,0 +1,130 @@
+﻿@model SCUBA_DIVER.Models.ContactInfo
+@{
+    ViewBag.Title = "Classes";
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Classes | Proud Parent of a SCUBA Diver</title>
+    <link href="~/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="mborder mainbox">
+        <div class="mborder sub-box-white">
+            <div class="mborder header">
+                <a href="index.html"><img src="~/images/proud_parent300x101.jpg" alt="Proud Parent Image" /></a>
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Classes", "Classes", "Home")</li>
+                    <li>@Html.ActionLink("Certifications", "Certifications", "Home")</li>
+                </ul>
+            </div>
+            <div class="para">
+                <h2>Classes</h2>
+                <hr>
+                <p> <a class="class-pic"><img src="~/images/swimming1.jpg" alt="Pool Class" title="Pool Class"> </a></p>
+                <h1>Request for Scuba Diving Lessions</h1>
+                <p class="bio">This is what it's all about - diving. You'll develop basic scuba skills in a pool or in confined water - a body of water with pool-like conditions. The basic skills you learn during your certification course will help you become familiar with your scuba gear and become an underwater explorer. </p>
+               
+                
+                <hr>
+                <div>
+                    <h2>Contact Us</h2>
+                    <hr>
+                    
+                    @using (Html.BeginForm("Classes", "Home",FormMethod.Post))
+                            {
+                        
+                            <table>
+                                <tr>
+                                    <td class="text-format">Name:</td>
+                                    <td>
+                                        @Html.TextBoxFor(m => m.Name, new {@class= "form-control text-format-input-h" })
+                                        @*<input class="text-format-input-h" type="text" onKeyUp="typing(this.value, 'name');" name="name" placeholder="John Doe" size="40" required>*@
+                                        <span id="name"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-format">Email:</td>
+                                    <td>
+                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control text-format-input-h" })
+                                        @*<input class="text-format-input-h" type="email" onKeyUp="typing(this.value, 'email');" name="email" placeholder="johndoe@email.com" size="40" required>*@
+                                        <span id="email"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-format">Subject:</td>
+                                    <td>
+                                        @Html.TextBoxFor(m => m.Subject, new { @class="form-control text-format-input"})                    
+                                        @*<input class="text-format-input-h" type="text" onKeyUp="typing(this.value, 'subject');" name="subject" placeholder="Interested in classes" size="40" required>*@
+                                        <span id="subject"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-format">Message:</td>
+                                    <td>
+                                        @Html.TextAreaFor(m => m.Message, new { @class = "form-control text-format-input-h" })
+                                        @*<textarea name="message" placeholder="Type your message here..." onKeyUp="typing(this.value, 'message');"></textarea>*@
+                                        <span id="message"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="submit" name="submit" class="">
+                                    </td>
+                                </tr>
+                            </table>
+                           
+                      
+                    }
+                    @*<form class="contactform" method="get" action="contactinfo">
+                        <table>
+                            <tr>
+                                <td class="text-format">Name:</td>
+                                <td>
+                                    <input class="text-format-input-h" type="text" onKeyUp="typing(this.value, 'name');" name="name" placeholder="John Doe" size="40" required>
+                                    <span id="name"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-format">Email:</td>
+                                <td>
+                                    <input class="text-format-input-h" type="email" onKeyUp="typing(this.value, 'email');" name="email" placeholder="johndoe@email.com" size="40" required>
+                                    <span id="email"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-format">Subject:</td>
+                                <td>
+                                    <input class="text-format-input-h" type="text" onKeyUp="typing(this.value, 'subject');" name="subject" placeholder="Interested in classes" size="40" required>
+                                    <span id="subject"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-format">Message:</td>
+                                <td>
+                                    <textarea name="message" placeholder="Type your message here..." onKeyUp="typing(this.value, 'message');"></textarea>
+                                    <span id="message"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    
+                                    @*<input onclick="letter(); return false;" type="submit" name="submit">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Proud Parent of a SCUBA Diver</title>
+    @*@Styles.Render("~/content/css")*@
+    @Styles.Render("~/css/styles.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+ 
+    @*<div class="mborder header">
+        <a href="index.html"><img src="~/images/proud_parent300x101.jpg" alt="Proud Parent Image" /></a>
+        <ul>
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("About", "About", "Home")</li>
+            <li>@Html.ActionLink("Classes", "Classes", "Home")</li>
+            <li>@Html.ActionLink("Certifications", "Certifications", "Home")</li>
+        </ul>
+    </div>*@
+  
+
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Classes", "Classes", "Home")</li>
+                        <li>@Html.ActionLink("Certifications", "Certifications", "Home")</li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>*@
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - BARRY UNIVERSITY - IT499 CAPSTONE</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

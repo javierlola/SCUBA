@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>About Us | Proud Parent of a SCUBA Diver</title>
+    <link href="~/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="mborder mainbox">
+        <div class="mborder sub-box-white">
+            <div class="mborder header">
+                <a href="index.html"><img src="~/images/proud_parent300x101.jpg" alt="Proud Parent Image" /></a>
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Classes", "Classes", "Home")</li>
+                    <li>@Html.ActionLink("Certifications", "Certifications", "Home")</li>
+                </ul>
+            </div>
+            <div class="para">
+                <h2>About Us</h2>
+                <hr>
+                <p><img src="~/images/brian235x254.jpg" alt="Brian Waters" title="Brian Waters"></p>
+                <h1>Brian Waters</h1>
+                <p class="bio">When not at his "real' job, Brian helps out around the dive shop. He is our go-to person and helps keep the business operating smoothly. Brian  moved from Boston to Florida in the late 80's and soon after earned his SCUBA certification. Brian is an avid diver and enjoys spearfishing the many ledges and wrecks of the Gulf of Mexico. Brian  has also completed his Rescue Diver Certification from our various SCUBA manufactures. </p>
+                <br>
+                <hr>
+                <br>
+                <p><img src="~/images/pam235.jpg" style="float:right;margin: 0 0 0 10px; " alt="Pam Driver" title="Pam Driver"></p>
+                <h1 align="right">Pam Driver</h1>
+                <p class="bio">Pam earned her open water SCUBA certification in 1985 and became an open water SCUBA instructor in 1991. From 1991 - 2002, Pam taught SCUBA lessons on weekends for SSI. In April 2002, Pam left her job in Nicaragua and came to DEEP DIVING full time. Pam earned the nick name of Mama P, when her dive students said she looked like a mama duck with all of her "duckling" students following her around.</p>
+            </div>
+        </div>
+    </div>
+</body>

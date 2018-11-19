@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<head>
+    <meta charset="utf-8">
+    <title>Proud Parent of a SCUBA Diver</title>
+    <link href="~/css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<div class="mborder mainbox">
+  <div class="mborder sub-box">
+    <div class="mborder header"><a href="index.html"><img src="~/images/proud_parent300x101.jpg" alt="Proud Parent Image"/></a>
+                                <ul>
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                                <li>@Html.ActionLink("About", "About", "Home")</li>
+                                <li>@Html.ActionLink("Classes", "Classes", "Home")</li>
+                                <li>@Html.ActionLink("Certifications", "Certifications", "Home")</li>
+                                </ul>
+    </div>
+    <div class="mborder pic-box"> <img src="~/images/mainpic960x480.jpg" alt="Main Page Divers Image"> </div>
+    <div class="mborder midcontent">
+      <div class="box1">
+        <div class="top">SSI<br>
+          CERTIFIED</div>
+        <div class="bottom">
+          <p> World-wide leader in diving education that is dedicated to provide The Ultimate Dive Experience. <br>
+            <a href="https://www.divessi.com/en/home/" onClick="return confirm('You are leaving our site...')">SSI WEBSITE</a> </p>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="top">SOUTH FLORIDA<br>
+          DIVING SITES</div>
+        <div class="bottom2">
+          <p> <a href="https://www.southfloridadiving.com/" onClick="return confirm('You are leaving our site...')"><img src="~/images/dive-flag225.jpg" alt="Diving Flag"></a> <br>
+          </p>
+        </div>
+      </div>
+      <div class="box3">
+        <div class="top">OPEN WATER<br>
+          DIVERS: SSI vs PADI</div>
+        <div class="bottom">
+          <p> The open water course is a recreational scuba diver training course which teaches safely to  explore the underwater world. <br>
+            <a href="https://www.bookyourdive.com/blog/2013/12/23/differences-padi-ssi" onClick="return confirm('You are leaving our site...')">SSI vs PADI</a> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
