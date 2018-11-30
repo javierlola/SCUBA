@@ -27,19 +27,27 @@ namespace SCUBA_DIVER.WEB.Controllers
         [HttpGet]
         public ActionResult Classes()
         {
-            ViewBag.Message = "Your contact page.";
-
+            ViewBag.Message = "Your contact page.";           
+            
             return View();
         }
 
+        
         [HttpPost]
         public ActionResult Classes(ContactInfo forminfo)
         {
             ContactInfoManager mgr = new ContactInfoManager();
             mgr.AddContactInfo(forminfo);
+            
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            forminfo.Email = "";
+            forminfo.Message = "";
+            forminfo.Name = "";
+            forminfo.Subject = "";
+
+            ModelState.Clear();
+            return View(forminfo);
         }
 
         [HttpGet]
