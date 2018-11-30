@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home";
+    ViewBag.Title = "Index";
 }
 <head>
     <meta charset="utf-8">
@@ -9,14 +9,15 @@
 
 <div class="mborder mainbox">
   <div class="mborder sub-box">
-    <div class="mborder header"><a href="index.html"><img src="~/images/proud_parent300x101.jpg" alt="Proud Parent Image"/></a>
-                                <ul>
-                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                                <li>@Html.ActionLink("About", "About", "Home")</li>
-                                <li>@Html.ActionLink("Classes", "Classes", "Home")</li>
-                                <li>@Html.ActionLink("Certifications", "Certifications", "Home")</li>
-                                </ul>
-    </div>
+      <div class="mborder header">
+          <a href="Index"><img src="~/images/proud_parent300x101.jpg" alt="Proud Parent Image" /></a>
+          <ul>
+              <li>@Html.ActionLink("Home", "Index", "Home")</li>
+              <li>@Html.ActionLink("About", "About", "Home")</li>
+              <li>@Html.ActionLink("Classes", "Classes", "Home")</li>
+              <li>@Html.ActionLink("Certifications", "Certifications", "Home")</li>
+          </ul>
+      </div>
     <div class="mborder pic-box"> <img src="~/images/mainpic960x480.jpg" alt="Main Page Divers Image"> </div>
     <div class="mborder midcontent">
       <div class="box1">

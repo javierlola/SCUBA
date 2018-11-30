@@ -176,6 +176,7 @@ h2 {
     .contactform textarea {
         width: 550px;
         height: 150px;
+
     }
 
 #letter {
@@ -257,4 +258,9 @@ h1 {
 .text-format-input-h {
     height: 30px;
     padding: 0 5px 0 5px;
+    }
+
+.textarea {
+    width: 550px;
+    height: 150px;
 }
